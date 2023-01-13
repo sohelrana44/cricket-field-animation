@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket-animation</title>
+<style>
+.field{
+border:1px solid;
+height: 290px;
+}
+.bat{
+    transition: transform 0.2s ease-in;
+}
+.field:hover .bat{
+transform: rotate(-60deg);
+transform-origin: top right;
+    }
+    .field:hover .ball{
+        transform: translate(800px);
+    }
+.ball{
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    border-radius: 20px;
+    position: relative;
+    left:305px;
+transition: transform 1s ease-out 0.4s;
+} 
+</style>
+</head>
+<body>
+    <div class="field">
+        <img class="bat" src="image/bat-4 png.jfif" alt="">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
